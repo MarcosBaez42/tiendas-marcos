@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    background-color: #f8e9e9;
 }
 
 .titulo{
@@ -56,6 +57,10 @@
     top: 2px;
 }
 
+.imgcarrito{
+    width: 30px;
+}
+
 .menu{
     margin-top: 30px;
 }
@@ -72,6 +77,86 @@ ul{
     
 }
 
+.carrito {
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.cesta {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cesta h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#carrito-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#carrito-lista li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+#carrito-lista li:last-child {
+    border-bottom: none;
+}
+
+.eliminar {
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}
+
+.tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tabla-carrito th, .tabla-carrito td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla-carrito th {
+    background-color: #f2f2f2;
+}
+
+#subtotal, #total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#boton-comprar {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#boton-comprar:hover {
+    background-color: #45a049;
+}
 .contenedor{
     margin-left: 85px;
     margin-top: 150px;
